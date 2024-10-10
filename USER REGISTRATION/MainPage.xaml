@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="USER_REGISTRATION.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:USER_REGISTRATION"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="AliceBlue">
+        <TextBlock Text="USER REGISTRATION"  FontSize="40" FontFamily="Times New Roman" Margin="20,20,20,20" HorizontalAlignment="Center" Foreground="#FFD2950F"/>
+
+        <StackPanel  Background="AliceBlue" Margin="80,150,80,80">
+
+            <TextBox x:Name="TxtBox"  PlaceholderText="Name"
+         CornerRadius="5" 
+         Margin="80,5,80,80"
+         FontSize="30"></TextBox>
+
+            <TextBox x:Name="TxtEmail" PlaceholderText="Email"
+         CornerRadius="5" 
+         Margin="80,-60,80,80"
+         FontSize="30"></TextBox>
+
+            <TextBox x:Name="TxtPassword" 
+                    PlaceholderText=" Password"
+         CornerRadius="5" 
+         Margin="80,-50,80,80"
+         FontSize="30"></TextBox>
+
+            <TextBox x:Name="Txtpass" PlaceholderText="Confirm Password" 
+         CornerRadius="5" 
+         Margin="80,-40,80,80"
+         FontSize="30"></TextBox>
+
+            <Button x:Name="RegisterBtn" 
+        Content=" Register "  
+        CornerRadius="10"
+        
+        FontSize="40" 
+        Background="DarkGreen"  Margin="90,-45,0,80" Click="click_to_Register"/>
+
+            <Button x:Name="ClearBtn" 
+         Content=" Clear "  
+         CornerRadius="10"
+         HorizontalAlignment="Left"
+         FontSize="40" 
+         Background="SkyBlue"  Margin="90,-35,0,80" Click="click_to_clear"/>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
